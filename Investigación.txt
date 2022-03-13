@@ -1,0 +1,72 @@
+HTTP: 
+Hypertext Transfer Protocol (HTTP) (o Protocolo de Transferencia de Hipertexto en español) es 
+un protocolo de la capa de aplicación para la transmisión de documentos hipermedia, como HTML.
+Fue diseñado para la comunicación entre los navegadores y servidores web, aunque puede ser utilizado 
+para otros propósitos también. Sigue el clásico modelo cliente-servidor, en el que un cliente establece
+una conexión, realizando una petición a un servidor y espera una respuesta del mismo.
+
+Servidor HTTP:
+Un servidor web o servidor HTTP es un programa informático que procesa una aplicación del lado del 
+servidor, realizando conexiones bidireccionales o unidireccionales y síncronas o asíncronas con el 
+cliente y generando o cediendo una respuesta en cualquier lenguaje o aplicación del lado del cliente.
+Es una pieza de software que comprende URLs (direcciones web) y HTTP (el protocolo que tu navegador usa 
+para ver las páginas web).
+
+Formato del paquete HTTP:
+En las versiones del protocolo HTTP/1.1 y anteriores los mensajes eran de formato texto y eran totalmente 
+comprensibles directamente por una persona. En HTTP/2, los mensajes estan estructurados en un nuevo formato 
+binario y las tramas permiten la compresión de las cabeceras y su multiplexación.
+
+HTTP Request:
+La línea de salida de una petición HTTP se conoce como línea de la petición. Siempre es la primera línea del 
+mensaje de solicitud y contiene tres campos:
+• Un método HTTP
+• Un identificador universal de recursos (URI)
+• Una versión del protocolo HTTP
+
+Aunque hay varios métodos de HTTP para recuperar datos de un servidor, las dos más utilizados son GET y POST.
+
+HTTP Response:
+La respuesta o HTTP response es el mensaje que envía el servidor al cliente tras haber recibido una 
+petición o HTTP request. 
+Se compone principalmente de: un Protocolo, un Status code, Headers y Body. 
+
+Puerto TCP:
+Los puertos TCP permiten distinguir distintas aplicaciones dentro de una misma máquina. 
+A través del número de puerto se identifican las aplicaciones emisores y receptoras. Esto resulta 
+fundamental, junto a la IP, para que se puede establecer la comunicación entre cliente y servidor.
+Cada lado de la conexión tiene asignado un determinado número de puerto. Se puede distinguir entre 
+puertos bien conocidos, registrados o dinámicos. En total existen 65.535 puertos,
+
+Métodos HTTP:
+Los métodos HTTP permiten comunicar al servidor lo que se quiere realizar con un resource bajo una URL.
+HTTP define un conjunto de métodos de petición para indicar la acción que se desea realizar para un recurso 
+determinado.
+
+        GET:
+        El método GET  solicita una representación de un recurso específico. Las peticiones que usan 
+        el método GET sólo deben recuperar datos. 
+        HEAD:
+        El método HEAD pide una respuesta idéntica a la de una petición GET, pero sin el cuerpo de la 
+        respuesta.
+        POST:
+        El método POST se utiliza para enviar una entidad a un recurso en específico, causando a menudo 
+        un cambio en el estado o efectos secundarios en el servidor.
+        PUT:
+        El modo PUT reemplaza todas las representaciones actuales del recurso de destino con la carga útil 
+        de la petición.
+        DELETE:
+        El método DELETE borra un recurso en específico.
+        CONNECT:
+        El método CONNECT establece un túnel hacia el servidor identificado por el recurso.
+        OPTIONS:
+        El método OPTIONS es utilizado para describir las opciones de comunicación para el recurso 
+        de destino.
+        TRACE:
+        El método TRACE  realiza una prueba de bucle de retorno de mensaje a lo largo de la ruta al 
+        recurso de destino.
+        PATCH:
+        El método PATCH  es utilizado para aplicar modificaciones parciales a un recurso.
+
+Los métodos más importates de HTTP (especialmente para hacer aplicaciones REST) 
+son: POST, GET, PUT, DELETE y HEAD.
